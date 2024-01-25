@@ -29,9 +29,9 @@ async def get_report(
         session
     )
 
-    spreadsheetid = await spreadsheets_create(wrapper_services)
-    await set_user_permissions(spreadsheetid, wrapper_services)
-    await spreadsheets_update_value(spreadsheetid,
+    spreadsheet_id = await spreadsheets_create(wrapper_services)
+    await set_user_permissions(spreadsheet_id, wrapper_services)
+    await spreadsheets_update_value(spreadsheet_id,
                                     all_charity_projects,
                                     wrapper_services)
     return all_charity_projects
