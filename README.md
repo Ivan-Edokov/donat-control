@@ -1,1 +1,1 @@
-# QRkot_spreadseets
+# donation control
